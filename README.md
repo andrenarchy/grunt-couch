@@ -33,7 +33,7 @@ grunt.initConfig({
   'couch-compile': {
     app: {
       files: {
-        'tmp/app.json': 'couch/*'
+        'tmp/app.json': 'app/*'
       }
     }
   }
@@ -58,11 +58,11 @@ Eg:
 grunt.initConfig({
   'couch-compile': {
     app: {
-      config: {
+      options: {
         merge: 'couch/shared'
       },
       files: {
-        'tmp/app.json': 'couch/*'
+        'tmp/app.json': 'app/*'
       }
     }
   }
